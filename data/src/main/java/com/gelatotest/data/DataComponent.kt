@@ -1,5 +1,6 @@
 package com.gelatotest.data
 
+import com.gelatotest.data.remote.PhotoListService
 import com.gelatotest.network.support.NetworkConfiguration
 import dagger.BindsInstance
 import dagger.Component
@@ -18,4 +19,6 @@ interface DataComponent {
 
         fun build(): DataComponent
     }
+
+    fun providesPhotoListService(): PhotoListService
 }

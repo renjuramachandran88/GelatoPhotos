@@ -12,4 +12,6 @@ class DataLibrary(
             retrofit(retrofit)
             networkConfiguration(networkConfiguration)
         }.build()
+
+    fun photoListService() = component.providesPhotoListService()
 }
