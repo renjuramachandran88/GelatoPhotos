@@ -6,7 +6,7 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 
-open class GelatoPhotosApplication : Application(), HasAndroidInjector {
+open class PicsumPhotosApplication : Application(), HasAndroidInjector {
 
     val appComponent: AppComponent by lazy {
         DaggerAppComponent.factory().create(applicationContext)

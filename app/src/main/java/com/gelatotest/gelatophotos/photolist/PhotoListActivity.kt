@@ -10,7 +10,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import com.gelatotest.gelatophotos.GelatoPhotosApplication
+import com.gelatotest.gelatophotos.PicsumPhotosApplication
 import com.gelatotest.gelatophotos.PhotoModel
 import com.gelatotest.gelatophotos.R
 import com.gelatotest.gelatophotos.State.*
@@ -30,7 +30,7 @@ class PhotoListActivity : AppCompatActivity(), LifecycleOwner, PhotoViewHolder.O
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        (application as GelatoPhotosApplication).appComponent
+        (application as PicsumPhotosApplication).appComponent
             .inject(this)
         viewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_photo_list)
         photoListViewModel =

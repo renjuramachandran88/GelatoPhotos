@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.bumptech.glide.Glide
-import com.gelatotest.gelatophotos.GelatoPhotosApplication
+import com.gelatotest.gelatophotos.PicsumPhotosApplication
 import com.gelatotest.gelatophotos.PhotoModel
 import com.gelatotest.gelatophotos.R
 import kotlinx.android.synthetic.main.activity_photo_view.*
@@ -17,7 +17,7 @@ class PhotoViewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        (application as GelatoPhotosApplication).appComponent
+        (application as PicsumPhotosApplication).appComponent
             .inject(this)
         viewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_photo_view)
         Glide.with(this)

@@ -5,7 +5,6 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
-import com.gelatotest.gelatophotos.GelatoPhotosApplication
 import com.gelatotest.gelatophotos.MockApp
 import com.gelatotest.gelatophotos.mocks.MockWebServerRobot
 import com.gelatotest.gelatophotos.mocks.MockWebServerRule
